@@ -1,4 +1,6 @@
-
+<?php
+session_start();
+?>
 
 <!DOCTYPE html>
 <html lang="en-US">
@@ -16,6 +18,18 @@
 </head>
 
 <body>
+    <?php
+      if($_SESSION["userType"]!="driver"){
+        header("Location: http://localhost/finalized1/login.html");
+      }
+
+      if(isset($_POST['signout'])) { 
+        echo "<p>signout pressed";
+        session_unset();
+        session_destroy();
+        header("Location: http://localhost/finalized1/login.html");
+      } 
+    ?>
     
     <div class="topnav">
         <ul class="nav-ul">
@@ -25,14 +39,16 @@
             <li><a class="active" href="#">Home</a></li>
 
             <li><a href="aboutPage.html">About</a></li>
-
+            <form method="post">
+                <input type="submit" value="Signout" name="signout">
+            </form>
         </ul>
     </div>
 
     <div class=navigation>
         <ul class="nav-ul">
-            <li class=navElement><a href="driver.html">Profile</a></li>
-            <li class=navElement><a href="cabRequestDriver.html">Cab Requests</a></li>
+            <li class=navElement><a href="driverProfile.php">Profile</a></li>
+            <li class=navElement><a href="driverCabRequest.php">Cab Requests</a></li>
         </ul>
     </div>
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
 
-    <title>Cab Service | Driver </title>
+    <title>Cab Service | Customer </title>
     <link rel="stylesheet" href="css/typography.css">
     <link rel="stylesheet" href="css/slideshow.css">
     <link rel="stylesheet" href="css/layout.css">
@@ -23,21 +23,18 @@
               <img src="images/xrlogo150x.png" alt="Cinque Terre">
             </a>
             <li><a class="active" href="#">Home</a></li>
-<!--
-            <li><a href="#">Try our Quiz</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Site Map</a></li>             
--->
             <li><a href="aboutPage.html">About</a></li>
+            <form method="post">
+                <input type="submit" value="Signout" name="signout">
+            </form>
 <!--            <input type="text" placeholder="Search Store..">-->
         </ul>
     </div>
     
     <div class=navigation>
         <ul class="nav-ul">
-            <li class=navElement><a href="driver.html">Profile</a></li>
-            
-            <li class=navElement><a href="cabRequestDriver.html">Cab Requests</a></li>
+            <li class=navElement><a href="CusCabRequest.php">Cab Request</a></li>
+            <li class=navElement><a href="CusHistory.php">Ride Hsitory</a></li>
         </ul>
     </div>
     
