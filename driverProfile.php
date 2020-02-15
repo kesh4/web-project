@@ -29,6 +29,8 @@ session_start();
         session_destroy();
         header("Location: http://localhost/finalized1/login.html");
       } 
+
+      $_SESSION["userType"]
     ?>
     
     <div class="topnav">
@@ -58,10 +60,26 @@ session_start();
           <div class="profile">
             <img class=img src="images/driver.jpg" >
             <div class="profiletext">
-              <h1> Vinod Sharma</h1>
-              <h2> 0711231245</h2>
-              <h3> colombo</h3>
-              <h4>**********</h4>
+              <?php
+                include ("php/connect.php");
+            
+                $viewSQL="select FName, LName, email, phoneNo, rating
+                from driver 
+                where idDriver='".$_SESSION["username"]."'";
+    
+                //Run SQL query or exit if any errors are retrieved
+                $exeviewSQL=mysqli_query($conn,$viewSQL) or die (mysqli_error($conn));
+    
+                //Create an array of records and fecth the results of the execution of the SQL query
+                //Loop through the array of records and display details in specific format
+                $array=mysqli_fetch_array($exeviewSQL);
+
+                  echo "<h1>".$array['FName']." ".$array['LName']."</h1>";
+                  echo "<h2>".$array['phoneNo']."</h2>";
+                  echo "<h3>".$array['email']."</h3>";
+                  echo "<h4>".$array['rating']."</h4>";
+                
+              ?>
             </div>
           </div>
         </div>

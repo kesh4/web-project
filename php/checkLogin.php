@@ -14,29 +14,30 @@ $viewCusSQL="select idCustomer from customer where idCustomer='".$username."' AN
 $exeViewCusSQL=mysqli_query($conn, $viewCusSQL) or die (mysqli_error());
 
 if(mysqli_num_rows($exeViewCusSQL)<=0){
-    $viewDriverSQL="select idDriver from driver where idDriver ='".$username."' AND password = '".$password."'";
+    $viewDriverSQL="select idDriver, approved from driver where idDriver ='".$username."' AND password = '".$password."'";
     
     $exeViewDriverSQL=mysqli_query($conn, $viewDriverSQL) or die (mysqli_error());
-    
-    if(mysqli_num_rows($exeViewDriverSQL)<=0){
-        echo "<body>";
-        echo "<p>Have entered wrong username or password";
-        echo "</body>";
-    }else{
+    $array=mysqli_fetch_array($exeViewDriverSQL);
+
+    if(mysqli_num_rows($exeViewDriverSQL)>0 && $array['approved']==1){
         session_start();
         if($_SESSION["userType"]==NULL){
             $_SESSION["userType"]="driver";
             $_SESSION['username']=$username;
-            $_SESSION['password']=$password;
+            //$_SESSION['password']=$password;
         }
         header("Location: http://localhost/finalized1/driverProfile.php");
+    }else{
+        echo "<body>";
+        echo "<p>Have entered wrong username or password";
+        echo "</body>";
     }
 }else{
     session_start();
     if($_SESSION["userType"]==NULL){
         $_SESSION["userType"]="customer";
         $_SESSION['username']=$username;
-        $_SESSION['password']=$password;
+        //$_SESSION['password']=$password;
     }
     header("Location: http://localhost/finalized1/CusCabRequest.php");
 }
