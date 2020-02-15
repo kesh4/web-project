@@ -1,0 +1,211 @@
+/*--------------------------------------------------------------
+Layouts
+--------------------------------------------------------------*/
+
+body {
+    background-color:  #222222;
+}
+/*
+
+.main-area {
+    max-width: auto;
+    position: relative;
+    margin: auto;
+    
+}
+
+.logo{
+	float: left;
+	width: 300px;
+	margin: 15px 70px 10px 70px;
+}
+*/
+
+.nav{
+	float: left;
+	margin: 30px 30px 10px 30px;
+    	font-size: 16px;
+    font-family: 'Helvetica';
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	overflow:hidden;
+}
+
+ul li {
+	float: left;
+	}
+
+ul li a{
+	float: left;
+	display: block;
+    padding: 10px;
+	}
+/*
+	
+.search{
+	float: right;
+	margin: 0px 0px 0px 102.9px;
+}
+*/
+
+/*
+.dish-image{
+	width: 270px;
+	height: 200px;
+	margin-left: 15%;
+	background-color: #e84c3d;
+	border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 5px;
+}
+*/
+/*
+
+.video {
+	text-align: right;
+	margin-top:-35px;
+}
+
+.left{
+	display: block;
+	float: left;
+	padding-left: 20px;
+	margin-top: 35px;
+}
+
+.left-rating {
+	display: block;
+	float: left;
+	padding-left: 20px;
+	margin-top: 35px;
+}
+
+.right{
+	float: right;
+	margin-right: 25px;
+	margin-top: 35px;
+	font-size: 1.5em;
+	color: #e84c3d;
+}
+
+
+table {
+    text-align:center;
+	border: 1px solid white;
+	border-spacing: 10px;
+}
+
+th {
+	border-bottom:1px solid white;
+	padding: 5px;
+}
+
+td {
+	padding: 5px;
+}
+
+.ingredients{
+	margin-left: 10%;
+}
+
+.IDs{
+	width: 60px;
+	height: 65px;
+	float:left;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 3px;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+
+.box9{
+	margin-left:12%;
+	margin-top: 70%;
+}
+
+.comments{
+	float: left;
+	width: 95%;
+	margin: 5px;
+	padding: 2px;
+	border-bottom: 1px solid white;
+}
+
+.footer-nav{
+	float: left;
+    margin-left: 38.5%;
+    align-content: center;
+}
+
+
+.grid{
+	  display: grid;
+	  grid-template-columns: 35% 65% ;
+}
+.section{
+	display: inline-block;
+	width: 25%;
+}
+
+.aside{
+	display: inline-block;
+	width: 75%;
+}
+*/
+
+/*
+.gid{
+	  display: grid;
+	  grid-template-columns: 100% ;
+	  text-align:center;
+}
+*/
+.topnav {
+    margin-top: 1%;
+    background-color: #333333;
+    overflow: hidden;
+    padding-left: 8px;
+    	font-size: 16px;
+    font-family: 'Helvetica';
+}
+.topnav a {
+  float: left;
+  color: #FFFEFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #a3a375;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #ff5050;
+  color: white;
+}
+.topnav a.activeGreen {
+  background-color: #4caf50;
+  color: white;
+}
+
+
+.main-area-aboutpage .main-area-aboutpageContent {
+    position: absolute; /* Position the background text */
+    top: 10%;
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+    height: 55%
+}
+

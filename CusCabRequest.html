@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Cab Service | Customer </title>
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/imagegallery.css">
+    <link rel="stylesheet" href="css/sideNavigation.css">
+<!--    <link rel="stylesheet" href="css/feedbackPopup.css">-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+</head>
+
+<body>
+    
+    <div class="topnav">
+        <ul class="nav-ul">
+            <a target="_blank" href="">
+              <img src="images/xrlogo150x.png" alt="Cinque Terre">
+            </a>
+            <li><a class="active" href="#">Home</a></li>
+<!--
+            <li><a href="#">Try our Quiz</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Site Map</a></li>             
+-->
+            <li><a href="aboutPage.html">About</a></li>
+<!--            <input type="text" placeholder="Search Store..">-->
+        </ul>
+    </div>
+    
+    <div class=navigation>
+        <ul class="nav-ul">
+            <li class=navElement><a href="CusCabRequest.html">Cab Request</a></li>
+            <li class=navElement><a href="CusHistory.html">Ride Hsitory</a></li>
+        </ul>
+    </div>
+    
+<!--    <div class=content>-->
+   <div class="container">
+            <form>
+                <label for="fname">Current Address</label><br>
+                <input type="text" id="fname" name="fullname" placeholder="Enter address you want the cab to come......... "><br>
+
+                <label for="lname">Destination Address</label><br>
+                <input type="text" id="email" name="Email" placeholder="Enter address of where you want to go........ "><br>
+
+<!--
+                <label for="rate">How would you rate this website ?</label><br><br>
+
+                <input id="rdbtn1" type="radio" name="rateus" value="poor" checked> Poor
+                <input id="rdbtn2" type="radio" name="rateus" value="good"> Good
+                <input id="rdbtn3" type="radio" name="rateus" value="excellent"> Excellent <br> <br>
+-->
+                <label for="lname">Date </label><br>
+                <input type="date" id="email" name="Email" placeholder="Enter date to cab to come........"><br>
+                
+                <label for="lname">Time </label><br>
+                <input type="time" id="email" name="Email" placeholder="Enter date to cab to come........"><br>
+
+
+<!--
+                <label for="subject">Comment</label><br>
+                <textarea id="comment" name="comment" placeholder="Write something.." style="height:200px"></textarea><br>
+                 Trigger/Open The Modal 
+-->
+                <input id="myBtn" type="submit" value="Request" onclick="updateTxt()">
+                    <!-- The Modal -->
+<!--
+                    <div id="myModal" class="modal">
+                     Modal content 
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h2>We appreciate you for taking time to give us a feedback :) </h2>
+                            </div>
+                            <div class="modal-body"> 
+                                <p>"Dear John, Thank you very much for your feedback. You have rated our site as Good and your comment was Very informative website."</p>
+                            </div>
+                        </div>
+                    </div>         
+-->
+            </form>
+        </div>
+<!--    </div>-->
+    
+    <br>
+    
+    <footer class="footer-nav"> 
+        <h5><font color="white">
+<!--        Copyright &copy; <span class="tm-current-year">2020</span> Web Coursework -->
+                2020 prime cab. all right reserved
+            </font>
+        </h5>
+    </footer>
+    <script src="js/slideshow.js"></script>
+    <script src="js/feedbackPopup.js"></script>
+</body>
+</html>
+	

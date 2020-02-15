@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title></title>
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/search.css">
+>
+    
+</head>
+
+
+
+    
+    
+<body>
+    
+    <div class="topnav">
+        <ul class="nav-ul">
+            <a target="_blank" href="">
+              <img src="images/xrlogo150x.png" alt="PRIME CABS">
+            </a>
+             <li><a class="active" href="AdminPage.html">Home</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="DriverApprove.html">Applied Drivers</a></li>            
+            <li><a href="aboutPage.html">About US</a></li>
+            
+        </ul>
+    </div>
+    <br />
+    
+    <form method="" action="">
+        <span id="txt-1">
+            By Name
+       
+        </span>
+    
+        <input id= "search-1" type="text" placeholder="Enter Name">
+    
+    
+    
+        <span id="txt-2">
+            By NIC
+       
+        </span>
+    
+        <input id= "search-2" type="text" placeholder="Enter NIC">
+    
+    
+        <span id="txt-3">
+            By Address
+       
+        </span>
+    
+        <input id= "search-3" type="text" placeholder="Enter Address">
+
+        <input id="searchBtn" type="submit" value="Search">
+        
+        <input id="removeBtn" type="submit" value="Remove">
+    
+    
+    </form>
+    <table class="content-table">
+	 <thead>
+		 <tr>
+			<th>Name</th>
+			<th>N.I.C</th>
+			<th>Address</th>
+			<th>Contact No</th>
+             <th>Vehicale No</th>
+             <th>Vehicale Type</th>
+             <th>Vehicale Model</th>
+             <th>Vehicale Brand</th>
+		 </tr>
+	 </thead>
+	 <tbody>
+		 <tr>
+			<td>1</td>
+			<td>Domenic</td>
+			<td>88,110</td>
+			<td>dcode</td>
+		 </tr>
+		 <tr class="active-row">
+			<td>2</td>
+			<td>sally</td>
+			<td>72,488</td>
+			<td>Students</td>
+		 </tr>
+		 <tr>
+			<td>3</td>
+			<td>Nick</td>
+			<td>52,300</td>
+			<td>dcode</td>
+		 </tr>
+         <tr class="active-row">
+			<td>2</td>
+			<td>sally</td>
+			<td>72,488</td>
+			<td>Students</td>
+             <td>72,488</td>
+			<td>Students</td>
+             <td>72,488</td>
+			<td>Students</td>
+		 </tr>
+		 <tr>
+			<td>3</td>
+			<td>Nick</td>
+			<td>52,300</td>
+			<td>dcode</td>
+		 </tr>
+	 </tbody> 
+	</table>
+    
+    
+    <style>
+	 .content-table{
+        
+       float: right;
+	   border-collapse: collapse;
+	   margin: 25px 0;
+        
+	   font-size: 0.9em;
+	   min-width: 400px;
+	   border-radius: 10px 10px 0 0;
+	   overflow: hidden;
+	   box-shadow: 0 0 20px rgba(0,0,0,0,15);
+        margin-top: 100px;
+        margin-right: 50px;
+        border: none;
+         font-family: sans-serif;
+         width: 60%;
+         
+	  }
+
+	 .content-table thead tr {
+	   background-color: #009879;
+	   color: #ffffff;
+	    text-align: center;
+		font-weight: bold;
+        
+         
+	  }
+	 .content-table th, .content-table td {
+		padding:12px 15px;
+	  }
+	 .content-table tbody tr{
+		border-bottom: 1px solid #dddddd;
+
+	  }
+	  .content-table tbody tr:nth-of-type(even){
+	    background-color: #f3f3f3;
+	  }
+      .content-table tbody tr:nth-of-type(odd){
+	    color: #f3f3f3;
+	  }
+	  .content-table tbody tr: last-of-type{
+	    border-bottom: 2px solid #009879;
+	  }
+	  .content-table tbody tr: active-row{
+		font-weight: bold;
+		color: #009879;
+	  }
+	  
+	</style> 
+    
+    
+</body>
+    
+
+</html>

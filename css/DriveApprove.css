@@ -1,0 +1,59 @@
+.containerElement {
+    position: absolute;
+    font-family: Courier;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    #background-color: #f2f2f2;
+    background-color: #ffffff ;
+    padding: 10px;
+    width: 70%;
+    
+
+}
+
+.container {
+    
+    margin-top: 2%;
+    margin-left:10%;
+    margin-right:10%;
+    border-radius: 5px;
+    #background-color: #f2f2f2;
+    background-color: #576574;
+    padding: 20px;
+    height: 550px;
+
+}
+
+.profpic{
+    float: right;   
+    width: 100px;
+    height: 100px;
+    
+}
+
+
+#acceptBtn, #removeBtn{
+
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding:14px;
+    width: 100px; 
+    margin-top: 1%;
+    color: white;
+    font-weight: bolder;
+    font-style: normal;
+
+}
+
+
+#acceptBtn{
+    background-color:green;
+
+}
+
+#removeBtn{
+    background-color:red; 
+
+}

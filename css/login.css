@@ -1,0 +1,131 @@
+body{
+    font-family: "helvetica";
+}
+
+.body_main{
+   background-image:url(../images/cabLogin.png);
+   background-position:bottom;
+   background-size:100% 95%;
+}
+.body{
+ background-image:url(abc.png);
+   background-position:bottom;
+   background-size:100% 95%;
+}
+
+.table_top{
+  background-color:white;
+  font-family: "monospace";
+  color: black;
+ border-radius: 5px;
+}
+
+
+.button{
+    background-color: white;
+    cursor: pointer;
+    font-family: "Trebuchet MS";
+    color:black;
+    font-weight: 400;
+    font-size:18px;
+    font-style: normal;
+    padding: 15px 32px;
+    border: none ;
+}
+.button:hover{
+    background-color: #81BDC5;
+    border-radius: 20px;
+}
+
+
+.hilight{
+    background-color: #81BDC5;
+    font-family: "Trebuchet MS";
+    color: darkblue;
+    font-weight: 400;
+    font-size:18px;
+    font-style: normal;
+    padding: 15px 32px;
+    border: none ;
+    border-radius: 15px;
+    
+}
+
+.box{
+    float:right;
+    opacity: 0.7;
+    margin-top: 120px;
+    margin-right:180px;
+    font-size-adjust: auto;
+}
+
+.box2{
+    float:left;
+    opacity: 0.7;
+    margin-top: 120px;
+    margin-right:180px;
+    font-size-adjust: auto;
+}
+
+.tb{
+    background-color:white;
+    border-radius: 15px;
+    color:darkslategrey;
+}
+input{
+    border-color: darkblue ;
+    border-style:solid;
+    border-radius: 5px;
+    font-style: italic;
+    padding:14px;
+    
+}
+
+input[type=submit]{
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding:14px;
+    width: 280px; 
+    background-color:red;
+    color: white;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+input[type=reset] {
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding:14px;
+    width: 280px;
+    background-color:blue;
+    color:white;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+input[type=submit]:hover,input[type=reset]:hover {
+    background-color:black;
+}
+
+.signup{
+    float:right;
+    opacity: 0.6;
+    padding: 80px;
+    font-size-adjust: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
