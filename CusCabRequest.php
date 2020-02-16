@@ -130,7 +130,7 @@ session_start();
     
 <!--    <div class=content>-->
    <div class="container">
-            <form>
+            <form method="POST" action="">
                 <label for="fname">Current Address</label><br>
                 <input type="text" id="fname" name="currAddress" placeholder="Enter address you want the cab to come......... "><br>
 
