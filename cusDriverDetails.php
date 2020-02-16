@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
 
     <title>Cab Service | Customer </title>
-    <link rel="stylesheet" href="css/layout.css">
 
-    <link rel="stylesheet" href="css/driverProfile.css">
-    <link rel="stylesheet" href="css/sideNavigation.css">
     <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/sideNavigation.css">
     
-<!--    <link rel="stylesheet" type="text/css" href="css/driverProfile.css">-->
+    <link rel="stylesheet" type="text/css" href="css/driverProfile.css">
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     
@@ -39,9 +38,9 @@
 
     <div class="container">
 
-        <div class="profile">
+        <div class="profileDetail">
             <img class=img src="images/driver.jpg" >
-            <div class="profiletext">
+            <div class="profiletextDetail">
               <h1> Vinod Sharma</h1>
               <h2> 0711231245</h2>
               <h3> colombo</h3>

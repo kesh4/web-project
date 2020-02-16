@@ -11,14 +11,15 @@
         include ("php/connect.php");
         
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $idRide = uniqid();
-            $currAddress =$_POST['currAddress'];
-            $desAddress =$_POST['desAddress'];
-            $date =$_POST['date'];
-            $time =$_POST['time'];
-            $idCustomer =$_SESSION["username"];
+            $idCustomer =$_POST['username'];
+            $FName =$_POST['FName'];
+            $LName =$_POST['LName'];
+            $NIC =$_POST['NIC'];
+            $email =$_POST['email'];
+            $phoneNo =$_POST['phoneNo'];
+            $password =$_POST["password"];
 
-            if (empty($currAddress) or empty($desAddress) or empty($date) or empty($time))
+            if (empty($idCustomer) or empty($FName) or empty($LName) or empty($NIC) or empty($email) or empty($phoneNo) or empty($password))
             {
                 echo "<p>Please ensure all mandatory fields are filled in!";
             }
@@ -27,8 +28,8 @@
                 //write SQL query
                 $addCustomer=
                 "insert into 
-                ride 
-                values ('".$idRide."', '".$currAddress."', '".$desAddress."', '".$date."', '".$time."', 'no', '".$idCustomer."', NULL,NULL)";
+                customer 
+                values ('".$idCustomer."', '".$FName."', '".$LName."', '".$NIC."', '".$email."', ".$phoneNo.", '".$password."')";
                 //run SQL query
                 $exeaddCustomer=mysqli_query($conn,$addCustomer);
 

@@ -103,22 +103,23 @@ input[type=submit]:hover {
 /*    width: 80%;*/
 }
 
-.profile{
-    
+.profileDetail{
+    float: left;
+    width: 100px;
+    padding:30px 0;
+    border-radius:10%;
     position: absolute;
 }
 
-.profiletext{
-    
+/* .profiletextDetail{
     float: left;
     margin-left: 10px;
-}
+} */
 
 .rating, .ratingView{
     
-    
     float: right;
-    width: 50%;
+    width: 400px;
     margin-right: 80px;
     
 }
