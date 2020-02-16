@@ -156,7 +156,7 @@ session_start();
                 <textarea id="comment" name="comment" placeholder="Write something.." style="height:200px"></textarea><br>
                  Trigger/Open The Modal 
 -->
-                <input id="myBtn" type="submit" value="Request" onclick="updateTxt()">
+                <input id="myBtn" type="submit" value="Request">
                     <!-- The Modal -->
 <!--
                     <div id="myModal" class="modal">

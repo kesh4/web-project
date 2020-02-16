@@ -124,6 +124,10 @@ input[type=submit]:hover,input[type=reset]:hover {
     background-color:black;
 }
 
+.lastRow{
+    margin-bottom: 20px;
+}
+
 .signup{
     float:right;
     opacity: 0.6;
