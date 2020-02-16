@@ -55,7 +55,7 @@
     margin-left:300px;
     margin-right:50px;
     border-radius: 5px;
-    #background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
     background-color: #576574;
     padding: 20px;
     height: 550px;
@@ -96,11 +96,38 @@ input[type=submit]:hover {
 */
     margin: 10px;
     border-radius: 5px;
-    #background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
     background-color: #ffffff ;
     padding: 10px;
 /*    height: 50px;*/
 /*    width: 80%;*/
+}
+
+.profile{
+    
+    position: absolute;
+}
+
+.profiletext{
+    
+    float: left;
+    margin-left: 10px;
+}
+
+.rating, .ratingView{
+    
+    
+    float: right;
+    width: 50%;
+    margin-right: 80px;
+    
+}
+
+.ratingView{
+    margin-top: 20px;
+    font-size: 20px;
+    
+    
 }
 
 /*
